@@ -1,0 +1,39 @@
+{
+    "name": "now-postgrest",
+    "author": "Nathan Cahill <nathan@nathancahill.com>",
+    "version": "0.1.0",
+    "main": "./dist/index",
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nathancahill/now-postgrest.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "test": "tsc && jest",
+        "prepublishOnly": "tsc"
+    },
+    "dependencies": {
+        "aws-lambda": "^0.1.2",
+        "execa": "^4.0.0",
+        "fs-extra": "^9.0.0",
+        "wait-on": "^4.0.1"
+    },
+    "devDependencies": {
+        "@now/build-utils": "^2.2.0",
+        "@now/frameworks": "^0.0.11",
+        "@now/routing-utils": "^1.8.0",
+        "@types/aws-lambda": "^8.10.27",
+        "@types/fs-extra": "^8.1.0",
+        "@types/glob": "^7.1.1",
+        "@types/wait-on": "^4.0.0",
+        "async-retry": "^1.3.1",
+        "buffer-replace": "^1.0.0",
+        "jest": "^25.1.0",
+        "node-fetch": "^2.6.0",
+        "typescript": "^3.8.3"
+    }
+}
