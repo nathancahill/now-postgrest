@@ -2,9 +2,8 @@ import { APIGatewayProxyEvent, Context } from 'aws-lambda';
 import { join } from 'path';
 import waitOn from 'wait-on';
 import { PassThrough } from 'stream';
-import execa from 'execa';
 import { spawn } from 'child_process';
-import { pathExists, readFile, remove, writeFile } from 'fs-extra';
+import { pathExists, readFile, writeFile } from 'fs-extra';
 import { IncomingHttpHeaders, OutgoingHttpHeaders, request } from 'http';
 
 interface NowProxyEvent {
@@ -83,6 +82,11 @@ const BINARY = '__NOW_BINARY';
 const PORT = '__NOW_PORT';
 const READY_TEXT: string = '__NOW_READY_TEXT';
 
+process.on('unhandledRejection', err => {
+  console.error('Unhandled rejection:', err);
+  process.exit(1);
+});
+
 export async function launcher(
   event: NowProxyEvent | APIGatewayProxyEvent,
   context: Context
@@ -100,22 +104,10 @@ export async function launcher(
 
   // check if container is reused
   const pidPath = join('/tmp', 'NOWPID');
-  const hasPID = await pathExists(pidPath);
-  let running = hasPID;
-
-  if (hasPID) {
-    const pid = await readFile(pidPath, 'utf8');
-    try {
-      await execa('kill', ['-0', pid]);
-    } catch (e) {
-      running = false;
-      await remove(pidPath);
-    }
-  }
+  const running = await pathExists(pidPath);
 
   if (!running) {
     const [cmd, ...args] = BINARY.split(' ');
-    console.log(`Starting ${cmd}...`);
     const subprocess = spawn(cmd, args, {
       stdio: ['pipe', 'pipe', 'inherit'],
       detached: true,
@@ -132,18 +124,14 @@ export async function launcher(
     inherit.pipe(process.stdout);
 
     if (READY_TEXT !== '') {
-      console.log('Waiting for readyText output...');
-
       await new Promise(resolve => {
-        watcher.on('data', (chunk: string) => {
-          if (chunk.includes(READY_TEXT)) {
+        watcher.on('data', (chunk: Buffer) => {
+          if (chunk.toString('utf8').includes(READY_TEXT)) {
             return resolve();
           }
         });
       });
     }
-
-    console.log(`Waiting for port ${PORT} to become available...`);
 
     await waitOn({
       resources: [`tcp:127.0.0.1:${PORT}`],
