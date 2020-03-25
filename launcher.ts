@@ -81,6 +81,7 @@ function normalizeEvent(
 const BINARY = '__NOW_BINARY';
 const PORT = '__NOW_PORT';
 const READY_TEXT: string = '__NOW_READY_TEXT';
+const BASE_PATH = '__NOW_BASE_PATH';
 
 process.on('unhandledRejection', err => {
   console.error('Unhandled rejection:', err);
@@ -97,7 +98,7 @@ export async function launcher(
   const opts = {
     hostname: '127.0.0.1',
     port: PORT,
-    path,
+    path: path.startsWith(BASE_PATH) ? `/${path.substring(BASE_PATH.length)}` : path,
     method,
     headers,
   };
