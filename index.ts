@@ -43,7 +43,7 @@ export async function build({
 
   launcherData = launcherData
     .replace("'__NOW_PORT'", '3000')
-    .replace("'__NOW_BASE_PATH'", `${basePath}`)
+    .replace('__NOW_BASE_PATH', `${basePath}`)
     .replace('__NOW_BINARY', `bin/postgrest ${entrypoint}`)
     .replace('__NOW_READY_TEXT', 'Connection successful');
 
