@@ -14,9 +14,12 @@
     "scripts": {
         "build": "tsc",
         "test": "tsc && jest",
-        "prepublishOnly": "tsc"
+        "prepublishOnly": "tsc",
+        "preversion": "yarn run test",
+        "postversion": "git push && git push --tags"
     },
     "dependencies": {
+        "@now/build-utils": "^2.2.0",
         "aws-lambda": "^0.1.2",
         "execa": "^4.0.0",
         "fs-extra": "^9.0.0",
@@ -34,8 +37,5 @@
         "jest": "^25.1.0",
         "node-fetch": "^2.6.0",
         "typescript": "^3.8.3"
-    },
-    "peerDependencies": {
-        "@now/build-utils": "^2.2.0"
     }
 }

@@ -3,7 +3,7 @@ import { join } from 'path';
 import waitOn from 'wait-on';
 import { PassThrough } from 'stream';
 import { spawn } from 'child_process';
-import { pathExists, readFile, writeFile } from 'fs-extra';
+import { pathExists, writeFile } from 'fs-extra';
 import { IncomingHttpHeaders, OutgoingHttpHeaders, request } from 'http';
 
 interface NowProxyEvent {
