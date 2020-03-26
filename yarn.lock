@@ -1975,15 +1975,15 @@ jest-each@^25.2.0:
     pretty-format "^25.2.1"
 
 jest-environment-jsdom@^25.2.0:
-  version "25.2.0"
-  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-25.2.0.tgz#15b38b1ba30e22763f9b44e27d5865dfcd44b52e"
-  integrity sha512-ODoKx5G3KOlfyREL9ZqekChZFsOJzNtt3nsna0AeptWwEO+BYT0k0Gj89EkWNg7uwjVTomIlQpSeA45E9uTk1A==
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-25.2.1.tgz#4f1da1bc46897c6ed818c850464b1114429e3ad5"
+  integrity sha512-bUhhhXtgrOgLhsFQFXgao8CQPYAEwtaVvhsF6O0A7Ie2uPONtAKCwuxyOM9WJaz9ag2ci5Pg7i2V2PRfGLl95w==
   dependencies:
-    "@jest/environment" "^25.2.0"
-    "@jest/fake-timers" "^25.2.0"
-    "@jest/types" "^25.2.0"
-    jest-mock "^25.2.0"
-    jest-util "^25.2.0"
+    "@jest/environment" "^25.2.1"
+    "@jest/fake-timers" "^25.2.1"
+    "@jest/types" "^25.2.1"
+    jest-mock "^25.2.1"
+    jest-util "^25.2.1"
     jsdom "^15.2.1"
 
 jest-environment-node@^25.2.0:
