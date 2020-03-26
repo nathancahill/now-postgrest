@@ -318,24 +318,24 @@
     slash "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@jest/environment@^25.2.0":
-  version "25.2.0"
-  resolved "https://registry.yarnpkg.com/@jest/environment/-/environment-25.2.0.tgz#20984739c9d85d03a15c0fb2a75558702202353c"
-  integrity sha512-cLkCRmVYg9QnyTLxZMUK72BVnwe/+ukxhwbt0DyFK+wayrlUtseusLfl9yvnarPzHtCWVx2LL68C6iOg2V1TdA==
+"@jest/environment@^25.2.0", "@jest/environment@^25.2.1":
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/@jest/environment/-/environment-25.2.1.tgz#d967f38c05accfb2dba325e93238684e8b1706bd"
+  integrity sha512-aeA3UlUmpblmv2CHBcNA7LvcXlcCtRpXaKKFVooRy9/Jk8B4IZAZMfrML/d+1cG5FpF17s4JVdu1kx0mbnaqTQ==
   dependencies:
-    "@jest/fake-timers" "^25.2.0"
-    "@jest/types" "^25.2.0"
-    jest-mock "^25.2.0"
+    "@jest/fake-timers" "^25.2.1"
+    "@jest/types" "^25.2.1"
+    jest-mock "^25.2.1"
 
-"@jest/fake-timers@^25.2.0":
-  version "25.2.0"
-  resolved "https://registry.yarnpkg.com/@jest/fake-timers/-/fake-timers-25.2.0.tgz#9410a2f4db59f09d661005193d1626df22b316bb"
-  integrity sha512-IcxxIEHsBspeentekQW5OLJqBWfAb+CSabDo8yyYG13iX5mKq54B2bdqvvPdAZ5LGK7dgBsTsFgteEn0xTtylQ==
+"@jest/fake-timers@^25.2.0", "@jest/fake-timers@^25.2.1":
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/@jest/fake-timers/-/fake-timers-25.2.1.tgz#caaaea22e810796d3538a77fdce6e554c864ae72"
+  integrity sha512-H1OC8AktrGTD10NHBauICkRCv7VOOrsgI8xokifAsxJMYhqoKBtJZbk2YpbrtnmdTUnk+qoxPUk+Mufwnl44iQ==
   dependencies:
-    "@jest/types" "^25.2.0"
-    jest-message-util "^25.2.0"
-    jest-mock "^25.2.0"
-    jest-util "^25.2.0"
+    "@jest/types" "^25.2.1"
+    jest-message-util "^25.2.1"
+    jest-mock "^25.2.1"
+    jest-util "^25.2.1"
     lolex "^5.0.0"
 
 "@jest/reporters@^25.2.0":
@@ -1975,15 +1975,15 @@ jest-each@^25.2.0:
     pretty-format "^25.2.1"
 
 jest-environment-jsdom@^25.2.0:
-  version "25.2.0"
-  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-25.2.0.tgz#15b38b1ba30e22763f9b44e27d5865dfcd44b52e"
-  integrity sha512-ODoKx5G3KOlfyREL9ZqekChZFsOJzNtt3nsna0AeptWwEO+BYT0k0Gj89EkWNg7uwjVTomIlQpSeA45E9uTk1A==
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-25.2.1.tgz#4f1da1bc46897c6ed818c850464b1114429e3ad5"
+  integrity sha512-bUhhhXtgrOgLhsFQFXgao8CQPYAEwtaVvhsF6O0A7Ie2uPONtAKCwuxyOM9WJaz9ag2ci5Pg7i2V2PRfGLl95w==
   dependencies:
-    "@jest/environment" "^25.2.0"
-    "@jest/fake-timers" "^25.2.0"
-    "@jest/types" "^25.2.0"
-    jest-mock "^25.2.0"
-    jest-util "^25.2.0"
+    "@jest/environment" "^25.2.1"
+    "@jest/fake-timers" "^25.2.1"
+    "@jest/types" "^25.2.1"
+    jest-mock "^25.2.1"
+    jest-util "^25.2.1"
     jsdom "^15.2.1"
 
 jest-environment-node@^25.2.0:
@@ -2095,7 +2095,21 @@ jest-message-util@^25.2.0:
     slash "^3.0.0"
     stack-utils "^1.0.1"
 
-jest-mock@^25.2.0:
+jest-message-util@^25.2.1:
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-25.2.1.tgz#43fb5f239954a28954e74dfea0b75efc4e7377fb"
+  integrity sha512-pxwehr9uPEuCI9bPjBiZxpFMN0+3wny5p7/E3hbV9XjsqREhJJAMf0czvHtgNeUBo2iAiAI9yi9ICKHPOKePEw==
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@jest/test-result" "^25.2.1"
+    "@jest/types" "^25.2.1"
+    "@types/stack-utils" "^1.0.1"
+    chalk "^3.0.0"
+    micromatch "^4.0.2"
+    slash "^3.0.0"
+    stack-utils "^1.0.1"
+
+jest-mock@^25.2.0, jest-mock@^25.2.1:
   version "25.2.1"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-25.2.1.tgz#37b294b8d0aa94c1af7714e039cc410df61593da"
   integrity sha512-ZXcmqpCTG1MEm2AP2q9XiJzdbQ655Pnssj+xQMP1thrW2ptEFrd4vSkxTpxk6rnluLPRKagaHmzUpWNxShMvqQ==
