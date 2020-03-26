@@ -411,10 +411,10 @@
     source-map "^0.6.1"
     write-file-atomic "^3.0.0"
 
-"@jest/types@^25.2.0":
-  version "25.2.0"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-25.2.0.tgz#0659866d9b31843a737b601b950a690e576a415a"
-  integrity sha512-RLWBAON8LEjzD60Cn0XFmvMNTuV+scKlufIUApnG7VF7oA2jCEk5J0uzEchx6xuOwhrHohQM28K4CmEjgtDEwg==
+"@jest/types@^25.2.0", "@jest/types@^25.2.1":
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-25.2.1.tgz#692c8950d4c21fc6b4cfd141c3470b735c5bffca"
+  integrity sha512-WuGFGJ3Rrycg+5ZwQTWKjr21M9psANPAWYD28K42hSeUzhv1H591VXIoq0tjs00mydhNOgVOkKSpzRS3CrOYFw==
   dependencies:
     "@types/istanbul-lib-coverage" "^2.0.0"
     "@types/istanbul-reports" "^1.1.1"
@@ -2036,11 +2036,11 @@ jest-message-util@^25.2.0:
     stack-utils "^1.0.1"
 
 jest-mock@^25.2.0:
-  version "25.2.0"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-25.2.0.tgz#494f750595ef1539e49d1546fb20520180acb3b8"
-  integrity sha512-nnYlMdySmipWkTIqQprLDY9zXDSi9kkQdiDVnlga5+rygQ0ORhljIkGbx3+qH9Nhh5kXDu8ae2otIK0ptY4aWw==
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-25.2.1.tgz#37b294b8d0aa94c1af7714e039cc410df61593da"
+  integrity sha512-ZXcmqpCTG1MEm2AP2q9XiJzdbQ655Pnssj+xQMP1thrW2ptEFrd4vSkxTpxk6rnluLPRKagaHmzUpWNxShMvqQ==
   dependencies:
-    "@jest/types" "^25.2.0"
+    "@jest/types" "^25.2.1"
 
 jest-pnp-resolver@^1.2.1:
   version "1.2.1"
