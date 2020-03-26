@@ -378,18 +378,7 @@
     graceful-fs "^4.2.3"
     source-map "^0.6.0"
 
-"@jest/test-result@^25.2.1":
-  version "25.2.1"
-  resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-25.2.1.tgz#dc8d26d4329c055733bd5ad6dc4eda190fbacd3b"
-  integrity sha512-E0tlWh2iOELRLbbPEngs3Dsx88vGBQOs6O3w46YeXfMHlwwqzWrlvoeUq6kRlHRm1O8H+EBr60Wtrwh20C+zWQ==
-  dependencies:
-    "@jest/console" "^25.2.1"
-    "@jest/transform" "^25.2.1"
-    "@jest/types" "^25.2.1"
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    collect-v8-coverage "^1.0.0"
-
-"@jest/test-result@^25.2.3":
+"@jest/test-result@^25.2.1", "@jest/test-result@^25.2.3":
   version "25.2.3"
   resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-25.2.3.tgz#db6028427514702c739dda66528dfbcc7fb8cdf4"
   integrity sha512-cNYidqERTcT+xqZZ5FPSvji7Bd2YYq9M/VJCEUmgTVRFZRPOPSu65crEzQJ4czcDChEJ9ovzZ65r3UBlajnh3w==
@@ -2084,21 +2073,7 @@ jest-matcher-utils@^25.2.1:
     jest-get-type "^25.2.1"
     pretty-format "^25.2.3"
 
-jest-message-util@^25.2.1:
-  version "25.2.1"
-  resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-25.2.1.tgz#43fb5f239954a28954e74dfea0b75efc4e7377fb"
-  integrity sha512-pxwehr9uPEuCI9bPjBiZxpFMN0+3wny5p7/E3hbV9XjsqREhJJAMf0czvHtgNeUBo2iAiAI9yi9ICKHPOKePEw==
-  dependencies:
-    "@babel/code-frame" "^7.0.0"
-    "@jest/test-result" "^25.2.1"
-    "@jest/types" "^25.2.1"
-    "@types/stack-utils" "^1.0.1"
-    chalk "^3.0.0"
-    micromatch "^4.0.2"
-    slash "^3.0.0"
-    stack-utils "^1.0.1"
-
-jest-message-util@^25.2.3:
+jest-message-util@^25.2.1, jest-message-util@^25.2.3:
   version "25.2.3"
   resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-25.2.3.tgz#a911c4e3af06df851cc6065d9a3119fd2a3aa240"
   integrity sha512-DcyDmdO5LVIeS0ngRvd7rk701XL60dAakUeQJ1tQRby27fyLYXD+V0nqVaC194W7fIlohjVQOZPHmKXIjn+Byw==
