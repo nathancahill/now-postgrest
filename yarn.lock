@@ -421,16 +421,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@jest/types@^25.2.3":
-  version "25.2.3"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-25.2.3.tgz#035c4fb94e2da472f359ff9a211915d59987f6b6"
-  integrity sha512-6oLQwO9mKif3Uph3RX5J1i3S7X7xtDHWBaaaoeKw8hOzV6YUd0qDcYcHZ6QXMHDIzSr7zzrEa51o2Ovlj6AtKQ==
-  dependencies:
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    "@types/istanbul-reports" "^1.1.1"
-    "@types/yargs" "^15.0.0"
-    chalk "^3.0.0"
-
 "@now/build-utils@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@now/build-utils/-/build-utils-2.2.0.tgz#19206f49c365665cb4b9f3d1f664e87ce18a5908"
@@ -1864,11 +1854,11 @@ istanbul-reports@^3.0.0:
     istanbul-lib-report "^3.0.0"
 
 jest-changed-files@^25.2.1:
-  version "25.2.1"
-  resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-25.2.1.tgz#2dca2c81980479c940addee863d8e73cc3a6b322"
-  integrity sha512-BB4XjM/dJNUAUtchZ2yJq50VK8XXbmgvt1MUD6kzgzoyz9F0+1ZDQ1yNvLl6pfDwKrMBG9GBY1lzaIBO3JByMg==
+  version "25.2.3"
+  resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-25.2.3.tgz#ad19deef9e47ba37efb432d2c9a67dfd97cc78af"
+  integrity sha512-EFxy94dvvbqRB36ezIPLKJ4fDIC+jAdNs8i8uTwFpaXd6H3LVc3ova1lNS4ZPWk09OCR2vq5kSdSQgar7zMORg==
   dependencies:
-    "@jest/types" "^25.2.1"
+    "@jest/types" "^25.2.3"
     execa "^3.2.0"
     throat "^5.0.0"
 
