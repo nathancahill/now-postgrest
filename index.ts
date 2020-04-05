@@ -22,14 +22,15 @@ export async function build({
   workPath,
   meta = {},
 }: BuildOptions) {
-  console.log(meta);
-  console.log('downloading user files...');
-  await download(files, workPath);
-  await runNpmInstall(__dirname, [
-    '--production',
-    '--modules-folder',
-    join(workPath, 'node_modules'),
-  ]);
+  await download(files, workPath, meta);
+  console.log('Installing dependencies...');
+
+  await runNpmInstall(
+    workPath,
+    ['--prefer-offline'],
+    {},
+    meta,
+  );
 
   let lambdaFiles = {
     [entrypoint]: files[entrypoint],
