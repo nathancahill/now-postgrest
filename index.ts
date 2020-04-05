@@ -28,11 +28,10 @@ export async function build({
   await runNpmInstall(
     __dirname,
     [
+      '--production',
       '--modules-folder',
       join(workPath, 'node_modules'),
     ],
-    {},
-    meta,
   );
 
   let lambdaFiles = {
