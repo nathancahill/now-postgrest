@@ -54,13 +54,13 @@ export async function build({
 
   const nodeFiles = await glob('node_modules/**', workPath);
 
-  const launcherPath = join(__dirname, 'launcher.js');
-  let launcherData = await readFile(launcherPath, 'utf8');
+  const confData = await readFile(join(__dirname, '..', 'postgrest.conf'), 'utf8');
+  let launcherData = await readFile(join(__dirname, 'launcher.js'), 'utf8');
 
   launcherData = launcherData
     .replace("'__NOW_PORT'", '3000')
     .replace('__NOW_BASE_PATH', `${userConfig.basePath || config.basePath}`)
-    .replace('__NOW_BINARY', `${meta.isDev ? 'postgrest' : 'bin/postgrest'} ${entrypoint}`)
+    .replace('__NOW_BINARY', meta.isDev ? 'postgrest' : 'bin/postgrest')
     .replace('__NOW_READY_TEXT', 'Connection successful');
 
   const lambda = await createLambda({
@@ -68,6 +68,7 @@ export async function build({
       ...lambdaFiles,
       ...nodeFiles,
       'launcher.js': new FileBlob({ data: launcherData }),
+      'postgrest.conf': new FileBlob({ data: confData })
     },
     handler: 'launcher.launcher',
     runtime: 'nodejs12.x',

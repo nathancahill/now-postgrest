@@ -116,11 +116,25 @@ export async function launcher(
   const running = await pathExists(pidPath);
 
   if (!running) {
-    const [cmd, ...args] = BINARY.split(' ');
-    const subprocess = spawn(cmd, args, {
+    const subprocess = spawn(BINARY, ['postgrest.conf'], {
       stdio: ['pipe', 'pipe', 'inherit'],
       detached: true,
       env: {
+        PGRST_DB_URI: '',
+        PGRST_DB_SCHEMA: 'public',
+        PGRST_DB_ANON_ROLE: '',
+        PGRST_DB_POOL: '100',
+        PGRST_DB_EXTRA_SEARCH_PATH: 'public',
+        PGRST_SERVER_HOST: '*4',
+        PGRST_OPENAPI_SERVER_PROXY_URI: '',
+        PGRST_JWT_SECRET: '',
+        PGRST_SECRET_IS_BASE64: 'false',
+        PGRST_JWT_AUD: '',
+        PGRST_MAX_ROWS: '',
+        PGRST_PRE_REQUEST: '',
+        PGRST_ROLE_CLAIM_KEY: '.role',
+        PGRST_ROOT_SPEC: '',
+        PGRST_RAW_MEDIA_TYPES: '',
         ...process.env,
         PGRST_SERVER_PORT: port,
       }
