@@ -3,6 +3,7 @@ import { join } from 'path';
 import waitOn from 'wait-on';
 import { PassThrough } from 'stream';
 import { spawn } from 'child_process';
+import getPort from 'get-port';
 import { pathExists, writeFile } from 'fs-extra';
 import { IncomingHttpHeaders, OutgoingHttpHeaders, request } from 'http';
 
@@ -92,12 +93,19 @@ export async function launcher(
   event: NowProxyEvent | APIGatewayProxyEvent,
   context: Context
 ): Promise<NowProxyResponse> {
+  let port = PORT
+  
+  if (process.env.NOW_REGION === 'dev1') {
+    const portN = await getPort({ port: 3000 })
+    port = `${portN}`
+  }
+
   context.callbackWaitsForEmptyEventLoop = false;
   const { isApiGateway, method, path, headers, body } = normalizeEvent(event);
 
   const opts = {
     hostname: '127.0.0.1',
-    port: PORT,
+    port: parseInt(port),
     path: path.startsWith(BASE_PATH) ? `/${path.substring(BASE_PATH.length)}` : path,
     method,
     headers,
@@ -112,6 +120,9 @@ export async function launcher(
     const subprocess = spawn(cmd, args, {
       stdio: ['pipe', 'pipe', 'inherit'],
       detached: true,
+      env: {
+        PGRST_SERVER_PORT: port,
+      }
     });
 
     const inherit = new PassThrough();
