@@ -26,8 +26,11 @@ export async function build({
   console.log('Installing dependencies...');
 
   await runNpmInstall(
-    workPath,
-    ['--prefer-offline'],
+    __dirname,
+    [
+      '--modules-folder',
+      join(workPath, 'node_modules'),
+    ],
     {},
     meta,
   );
