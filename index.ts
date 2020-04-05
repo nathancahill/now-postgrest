@@ -22,6 +22,7 @@ export async function build({
   workPath,
   meta = {},
 }: BuildOptions) {
+  console.log(meta);
   console.log('downloading user files...');
   await download(files, workPath);
   await runNpmInstall(__dirname, [
