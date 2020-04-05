@@ -4,7 +4,7 @@ import waitOn from 'wait-on';
 import { PassThrough } from 'stream';
 import { spawn } from 'child_process';
 import getPort from 'get-port';
-import { pathExists, writeFile } from 'fs-extra';
+import { readFile, pathExists, writeFile } from 'fs-extra';
 import { IncomingHttpHeaders, OutgoingHttpHeaders, request } from 'http';
 
 interface NowProxyEvent {
@@ -95,9 +95,19 @@ export async function launcher(
 ): Promise<NowProxyResponse> {
   let port = PORT
   
+  // check if container is reused
+  const pidPath = join('/tmp', 'NOWPID');
+  const running = await pathExists(pidPath);
+
   if (process.env.NOW_REGION === 'dev1') {
-    const portN = await getPort({ port: 3000 })
-    port = `${portN}`
+    if (running) {
+      const pidFile = await readFile(pidPath, 'utf8')
+      const prevPort = pidFile.split(':')[1]
+      port = prevPort
+    } else {
+      const portN = await getPort({ port: 3000 })
+      port = `${portN}`
+    }
   }
 
   context.callbackWaitsForEmptyEventLoop = false;
@@ -110,10 +120,6 @@ export async function launcher(
     method,
     headers,
   };
-
-  // check if container is reused
-  const pidPath = join('/tmp', 'NOWPID');
-  const running = await pathExists(pidPath);
 
   if (!running) {
     const subprocess = spawn(BINARY, ['postgrest.conf'], {
@@ -166,7 +172,7 @@ export async function launcher(
       interval: 50,
     });
 
-    await writeFile(pidPath, subprocess.pid);
+    await writeFile(pidPath, `${subprocess.pid}:${port}`);
     console.log('Ready');
   }
 
