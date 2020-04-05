@@ -19,8 +19,6 @@ export const config = {
   basePath: '/',
 };
 
-export const version = 3;
-
 export async function analyze({
   files,
   entrypoint,
@@ -100,6 +98,6 @@ export async function build({
   });
 
   return {
-    output: lambda,
+    [entrypoint]: lambda,
   };
 }
