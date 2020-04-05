@@ -100,8 +100,6 @@ export async function build({
   });
 
   return {
-    output: {
-      [entrypoint]: lambda,
-    }
+    output: lambda,
   };
 }
