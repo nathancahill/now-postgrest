@@ -93,21 +93,14 @@ export async function launcher(
   event: NowProxyEvent | APIGatewayProxyEvent,
   context: Context
 ): Promise<NowProxyResponse> {
+  let isDev = process.env.NOW_REGION === 'dev1'
   let port = PORT
-  
-  // check if container is reused
+  let running = false
   const pidPath = join('/tmp', 'NOWPID');
-  const running = await pathExists(pidPath);
 
-  if (process.env.NOW_REGION === 'dev1') {
-    if (running) {
-      const pidFile = await readFile(pidPath, 'utf8')
-      const prevPort = pidFile.split(':')[1]
-      port = prevPort
-    } else {
-      const portN = await getPort({ port: 3000 })
-      port = `${portN}`
-    }
+  if (!isDev) {
+    // check if container is reused
+    running = await pathExists(pidPath);
   }
 
   context.callbackWaitsForEmptyEventLoop = false;
@@ -124,7 +117,7 @@ export async function launcher(
   if (!running) {
     const subprocess = spawn(BINARY, ['postgrest.conf'], {
       stdio: ['pipe', 'pipe', 'inherit'],
-      detached: true,
+      detached: !isDev,
       env: {
         PGRST_DB_URI: '',
         PGRST_DB_SCHEMA: 'public',
@@ -172,8 +165,9 @@ export async function launcher(
       interval: 50,
     });
 
-    await writeFile(pidPath, `${subprocess.pid}:${port}`);
-    console.log('Ready');
+    if (!isDev) {
+      await writeFile(pidPath, `${subprocess.pid}:${port}`);
+    }
   }
 
   // eslint-disable-next-line consistent-return
