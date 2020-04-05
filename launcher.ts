@@ -4,7 +4,7 @@ import waitOn from 'wait-on';
 import { PassThrough } from 'stream';
 import { spawn } from 'child_process';
 import getPort from 'get-port';
-import { readFile, pathExists, writeFile } from 'fs-extra';
+import { pathExists, writeFile } from 'fs-extra';
 import { IncomingHttpHeaders, OutgoingHttpHeaders, request } from 'http';
 
 interface NowProxyEvent {
@@ -98,7 +98,10 @@ export async function launcher(
   let running = false
   const pidPath = join('/tmp', 'NOWPID');
 
-  if (!isDev) {
+  if (isDev) {
+    const portN = await getPort({ port: 3000 })
+    port = `${portN}`
+  } else {
     // check if container is reused
     running = await pathExists(pidPath);
   }
@@ -166,7 +169,7 @@ export async function launcher(
     });
 
     if (!isDev) {
-      await writeFile(pidPath, `${subprocess.pid}:${port}`);
+      await writeFile(pidPath, `${subprocess.pid}`);
     }
   }
 
