@@ -7,13 +7,38 @@ import {
   FileBlob,
   BuildOptions,
   runNpmInstall,
+  AnalyzeOptions,
+  PrepareCacheOptions,
+  Files,
 } from '@now/build-utils';
+import crypto from 'crypto'
 import execa from 'execa';
 
 export const config = {
   maxLambdaSize: '50mb',
   basePath: '/',
 };
+
+export const version = 3;
+
+export async function analyze({
+  files,
+  entrypoint,
+  config,
+}: AnalyzeOptions) {
+  return crypto.createHash('sha1').update(`
+    ${entrypoint}
+    ${files[entrypoint].digest}
+    ${JSON.stringify(config)}
+  `).digest('base64')
+}
+
+export async function prepareCache({
+  workPath,
+}: PrepareCacheOptions): Promise<Files> {
+  const cache = await glob('node_modules/**', workPath);
+  return cache;
+}
 
 export async function build({
   files,
