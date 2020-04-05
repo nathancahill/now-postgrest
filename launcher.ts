@@ -146,7 +146,7 @@ export async function launcher(
     }
 
     await waitOn({
-      resources: [`tcp:127.0.0.1:${PORT}`],
+      resources: [`tcp:127.0.0.1:${port}`],
       tcpTimeout: 50,
       interval: 50,
     });
