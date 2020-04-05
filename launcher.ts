@@ -121,6 +121,7 @@ export async function launcher(
       stdio: ['pipe', 'pipe', 'inherit'],
       detached: true,
       env: {
+        ...process.env,
         PGRST_SERVER_PORT: port,
       }
     });
