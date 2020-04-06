@@ -3,7 +3,6 @@
 Deploy PostgREST to Now.
 
 ##### `now.json`
--------
 ```json
 {
     "functions": {
@@ -22,11 +21,18 @@ Deploy PostgREST to Now.
 ```
 
 ##### `api/postgrest.conf`
-
---------
-
 ```ini
 db-uri = "$(DB_URI)"
 db-schema = "api"
 db-anon-role = "web_anon"
+```
+
+#### Locally with `now dev`
+
+A local `postgrest` binary is required to be in your `$PATH`. Follow the [installation instructions](http://postgrest.org/en/v6.0/tutorials/tut0.html#step-3-install-postgrest).
+
+##### `.env`
+
+```ini
+DB_URI=postgres:///app
 ```
