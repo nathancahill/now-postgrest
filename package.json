@@ -1,0 +1,44 @@
+{
+    "name": "now-postgrest",
+    "author": "Nathan Cahill <nathan@nathancahill.com>",
+    "version": "0.2.30",
+    "main": "./dist/index",
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nathancahill/now-postgrest.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "format": "prettier --write \"**/*.js\" \"**/*.ts\" \"**/*.json\"",
+        "build": "tsc",
+        "test": "tsc && jest",
+        "prepublishOnly": "tsc",
+        "preversion": "yarn run test",
+        "postversion": "git push && git push --tags"
+    },
+    "dependencies": {
+        "@now/build-utils": "^2.2.0",
+        "aws-lambda": "^1.0.5",
+        "execa": "^4.0.0",
+        "fs-extra": "^9.0.0",
+        "get-port": "^5.1.1",
+        "wait-on": "^4.0.1"
+    },
+    "devDependencies": {
+        "@now/frameworks": "^0.0.12",
+        "@now/routing-utils": "^1.8.0",
+        "@types/aws-lambda": "^8.10.47",
+        "@types/fs-extra": "^8.1.0",
+        "@types/glob": "^7.1.1",
+        "@types/wait-on": "^4.0.0",
+        "async-retry": "^1.3.1",
+        "buffer-replace": "^1.0.0",
+        "jest": "^25.2.7",
+        "node-fetch": "^2.6.0",
+        "prettier": "^2.0.3",
+        "typescript": "^3.8.3"
+    }
+}
