@@ -1,7 +1,7 @@
 {
     "name": "now-postgrest",
     "author": "Nathan Cahill <nathan@nathancahill.com>",
-    "version": "0.2.30",
+    "version": "0.2.29",
     "main": "./dist/index",
     "files": [
         "dist"
