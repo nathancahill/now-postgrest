@@ -14,8 +14,8 @@
     "scripts": {
         "format": "prettier --write \"**/*.js\" \"**/*.ts\" \"**/*.json\"",
         "build": "tsc --p tsconfig-build.json && ncc build src/launcher.ts -o dist/launcher",
-        "test": "tsc && jest",
-        "prepublishOnly": "tsc",
+        "test": "yarn build && jest",
+        "prepublishOnly": "yarn build",
         "preversion": "yarn run test",
         "postversion": "git push && git push --tags"
     },
