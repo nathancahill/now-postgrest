@@ -7,7 +7,7 @@ Deploy PostgREST to Now.
 {
     "functions": {
         "api/postgrest.conf": {
-            "runtime": "now-postgrest@0.2.30"
+            "runtime": "now-postgrest@0.3.0"
         }
     },
     "routes": [
