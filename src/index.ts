@@ -36,19 +36,11 @@ export async function build({
     meta = {},
 }: BuildOptions) {
     await download(files, workPath, meta)
-    console.log('Installing dependencies...')
-
-    const nodeModules = await getWriteableDirectory()
-
-    process.env.NPM_ONLY_PRODUCTION = '1'
-    await runNpmInstall(__dirname, [
-        '--modules-folder',
-        join(nodeModules, 'node_modules'),
-    ])
 
     let lambdaFiles = {}
 
     if (!meta.isDev) {
+        console.log('Installing postgrest...')
         await execa(
             'curl',
             [
@@ -68,10 +60,7 @@ export async function build({
         }
     }
 
-    const nodeFiles = await glob('node_modules/**', nodeModules)
-    const renamed = rename(nodeFiles, o => o.replace(`${nodeModules}/node_modules`, 'node_modules'))
-
-    let launcherData = await readFile(join(__dirname, 'launcher.js'), 'utf8')
+    let launcherData = await readFile(join(__dirname, 'launcher', 'index.js'), 'utf8')
     let confData = await readFile(join(workPath, entrypoint), 'utf8')
 
     let basePath = '/'
@@ -98,7 +87,6 @@ export async function build({
     const lambda = await createLambda({
         files: {
             ...lambdaFiles,
-            ...renamed,
             'launcher.js': new FileBlob({ data: launcherData }),
             [entrypoint]: new FileBlob({ data: confData }),
         },
