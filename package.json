@@ -13,7 +13,7 @@
     "license": "MIT",
     "scripts": {
         "format": "prettier --write \"**/*.js\" \"**/*.ts\" \"**/*.json\"",
-        "build": "tsc",
+        "build": "tsc --p tsconfig-build.json && ncc build src/launcher.ts -o dist/launcher",
         "test": "tsc && jest",
         "prepublishOnly": "tsc",
         "preversion": "yarn run test",
@@ -34,6 +34,7 @@
         "@types/fs-extra": "^8.1.0",
         "@types/glob": "^7.1.1",
         "@types/wait-on": "^4.0.0",
+        "@zeit/ncc": "^0.22.1",
         "async-retry": "^1.3.1",
         "buffer-replace": "^1.0.0",
         "jest": "^25.2.7",
