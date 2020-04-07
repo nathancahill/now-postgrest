@@ -6,10 +6,7 @@ import {
     FileBlob,
     glob,
     BuildOptions,
-    runNpmInstall,
     AnalyzeOptions,
-    rename,
-    getWriteableDirectory,
 } from '@now/build-utils'
 import crypto from 'crypto'
 import execa from 'execa'
