@@ -25,6 +25,7 @@ Deploy PostgREST to Now.
 db-uri = "$(DB_URI)"
 db-schema = "api"
 db-anon-role = "web_anon"
+base-url = "/api/"
 ```
 
 #### Locally with `now dev`
