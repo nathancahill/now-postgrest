@@ -28,7 +28,7 @@
         "wait-on": "^4.0.2"
     },
     "devDependencies": {
-        "@now/frameworks": "^0.0.12",
+        "@now/frameworks": "^0.0.13",
         "@now/routing-utils": "^1.8.0",
         "@types/aws-lambda": "^8.10.47",
         "@types/fs-extra": "^8.1.0",
