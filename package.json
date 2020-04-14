@@ -29,7 +29,7 @@
     },
     "devDependencies": {
         "@now/frameworks": "^0.0.13",
-        "@now/routing-utils": "^1.8.0",
+        "@now/routing-utils": "^1.8.1",
         "@types/aws-lambda": "^8.10.47",
         "@types/fs-extra": "^8.1.0",
         "@types/glob": "^7.1.1",
