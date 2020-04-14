@@ -486,10 +486,10 @@
   resolved "https://registry.yarnpkg.com/@now/frameworks/-/frameworks-0.0.13.tgz#eb04cb13db1c53ec8a10af98c54c76ad816df410"
   integrity sha512-GVsoRfNP6vJdOsKMN7aiTsRJSSff7Fhq8hjc3W4O8qmBV+NX+w4uljzZUanKfF+lfDtK1Cw5VXaD2mEQwvWjMQ==
 
-"@now/routing-utils@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@now/routing-utils/-/routing-utils-1.8.0.tgz#f2e3105431c86e9183f79cf0b23011fd24023c24"
-  integrity sha512-495jhKvPJTOws8MOSO1+q20pFmMpQcaSM9H0ha/2W8Uy14hn7640qrhLRaM9hHA2COt/PulDjqTAiKUqiEiVKQ==
+"@now/routing-utils@^1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@now/routing-utils/-/routing-utils-1.8.1.tgz#4389c4c96e841338cd34d5182be903098c52b981"
+  integrity sha512-lQ+J3lRMq+lJk2D78JlOvJ2NY8uAIMdFKDhGv5QGtyorAzHZOnNDg3FqiWRoYoL4wjmN7xe8PqWSrmOKQTruEw==
   dependencies:
     path-to-regexp "6.1.0"
   optionalDependencies:
