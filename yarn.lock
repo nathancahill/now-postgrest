@@ -2217,9 +2217,9 @@ jest-regex-util@^25.2.6:
   integrity sha512-KQqf7a0NrtCkYmZZzodPftn7fL1cq3GQAFVMn5Hg8uKx/fIenLEobNanUxb7abQ1sjADHBseG/2FGpsv/wr+Qw==
 
 jest-resolve-dependencies@^25.5.1:
-  version "25.5.1"
-  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-25.5.1.tgz#738a1e45e12872a6500358d6296614524a42825b"
-  integrity sha512-0lJr2rg1dfruCAUK9hk9RAnQchj36W7Vg2X+81McZI3TTihJsa5Mwa8u4eycxRKrZjP8lGMsO+2+z49H6qA4Ug==
+  version "25.5.2"
+  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-25.5.2.tgz#7409d14437497339e0acb88575408f2265c9a58d"
+  integrity sha512-4xlPp6/SFFZj7g7WkhoKEEWsYqmAK6WcmFFRfDJ0K4T2f/MCJgFEPqv1F88ro6ZJdpOti08CxGku4gBwau/RjQ==
   dependencies:
     "@jest/types" "^25.5.0"
     jest-regex-util "^25.2.6"
