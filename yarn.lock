@@ -486,6 +486,16 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@jest/types@^26.0.1":
+  version "26.0.1"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-26.0.1.tgz#b78333fbd113fa7aec8d39de24f88de8686dac67"
+  integrity sha512-IbtjvqI9+eS1qFnOIEL7ggWmT+iK/U+Vde9cGWtYb/b6XgKb3X44ZAe/z9YZzoAAZ/E92m0DqrilF934IGNnQA==
+  dependencies:
+    "@types/istanbul-lib-coverage" "^2.0.0"
+    "@types/istanbul-reports" "^1.1.1"
+    "@types/yargs" "^15.0.0"
+    chalk "^4.0.0"
+
 "@now/build-utils@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@now/build-utils/-/build-utils-2.2.1.tgz#9e39d76e53bc7d34b2ec9dd74a635309e76e5842"
@@ -2123,12 +2133,12 @@ jest-jasmine2@^26.0.0, jest-jasmine2@^26.0.1:
     throat "^5.0.0"
 
 jest-leak-detector@^26.0.0:
-  version "26.0.0"
-  resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-26.0.0.tgz#460e76179bbc0499f470d459802b45c28e048d11"
-  integrity sha512-illOYTJmW0zM4EY42dtv+sXUzVlhq7Mmf3JREm0H+IxFikhfMPiNWOKHOhb2+1j5uWZ1OkF/wLhMcD6+SBi7kg==
+  version "26.0.1"
+  resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-26.0.1.tgz#79b19ab3f41170e0a78eb8fa754a116d3447fb8c"
+  integrity sha512-93FR8tJhaYIWrWsbmVN1pQ9ZNlbgRpfvrnw5LmgLRX0ckOJ8ut/I35CL7awi2ecq6Ca4lL59bEK9hr7nqoHWPA==
   dependencies:
     jest-get-type "^26.0.0"
-    pretty-format "^26.0.0"
+    pretty-format "^26.0.1"
 
 jest-leak-detector@^26.0.1:
   version "26.0.1"
