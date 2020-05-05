@@ -1409,7 +1409,7 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-expect@^26.0.0, expect@^26.0.1:
+expect@^26.0.1:
   version "26.0.1"
   resolved "https://registry.yarnpkg.com/expect/-/expect-26.0.1.tgz#18697b9611a7e2725e20ba3ceadda49bc9865421"
   integrity sha512-QcCy4nygHeqmbw564YxNbHTJlXh47dVID2BUP52cZFpLU9zHViMFK6h07cC1wf7GYCTIigTdAXhVua8Yl1FkKg==
@@ -2040,17 +2040,6 @@ jest-docblock@^26.0.0:
   dependencies:
     detect-newline "^3.0.0"
 
-jest-each@^26.0.0:
-  version "26.0.0"
-  resolved "https://registry.yarnpkg.com/jest-each/-/jest-each-26.0.0.tgz#de87375ac2bc61417267c520322f428c09ece0ca"
-  integrity sha512-4Vz/aYTrl4dEclGfhhXuC+mMqTJtbneYKK6LtQMgZKeCdCzgXXKMFMFbSoRG3k5X9iq6V2+Jg0w1ZxlZmY1r7A==
-  dependencies:
-    "@jest/types" "^26.0.0"
-    chalk "^4.0.0"
-    jest-get-type "^26.0.0"
-    jest-util "^26.0.0"
-    pretty-format "^26.0.0"
-
 jest-each@^26.0.1:
   version "26.0.1"
   resolved "https://registry.yarnpkg.com/jest-each/-/jest-each-26.0.1.tgz#633083061619302fc90dd8f58350f9d77d67be04"
@@ -2110,30 +2099,7 @@ jest-haste-map@^26.0.0, jest-haste-map@^26.0.1:
   optionalDependencies:
     fsevents "^2.1.2"
 
-jest-jasmine2@^26.0.0:
-  version "26.0.0"
-  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-26.0.0.tgz#c6bce1bd1512359e3c65b6fd7f49276f9184b7e2"
-  integrity sha512-QMOW4Vsj6NQGkUlaPKw5GKNJ4Ee1w3OiLUQLgRu/XdaNxUUf1X7SQZVcef8rzZJFBi79hsLIFXNf/Ja2+E0X+A==
-  dependencies:
-    "@babel/traverse" "^7.1.0"
-    "@jest/environment" "^26.0.0"
-    "@jest/source-map" "^26.0.0"
-    "@jest/test-result" "^26.0.0"
-    "@jest/types" "^26.0.0"
-    chalk "^4.0.0"
-    co "^4.6.0"
-    expect "^26.0.0"
-    is-generator-fn "^2.0.0"
-    jest-each "^26.0.0"
-    jest-matcher-utils "^26.0.0"
-    jest-message-util "^26.0.0"
-    jest-runtime "^26.0.0"
-    jest-snapshot "^26.0.0"
-    jest-util "^26.0.0"
-    pretty-format "^26.0.0"
-    throat "^5.0.0"
-
-jest-jasmine2@^26.0.1:
+jest-jasmine2@^26.0.0, jest-jasmine2@^26.0.1:
   version "26.0.1"
   resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-26.0.1.tgz#947c40ee816636ba23112af3206d6fa7b23c1c1c"
   integrity sha512-ILaRyiWxiXOJ+RWTKupzQWwnPaeXPIoLS5uW41h18varJzd9/7I0QJGqg69fhTT1ev9JpSSo9QtalriUN0oqOg==
@@ -2172,7 +2138,7 @@ jest-leak-detector@^26.0.1:
     jest-get-type "^26.0.0"
     pretty-format "^26.0.1"
 
-jest-matcher-utils@^26.0.0, jest-matcher-utils@^26.0.1:
+jest-matcher-utils@^26.0.1:
   version "26.0.1"
   resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-26.0.1.tgz#12e1fc386fe4f14678f4cc8dbd5ba75a58092911"
   integrity sha512-PUMlsLth0Azen8Q2WFTwnSkGh2JZ8FYuwijC8NR47vXKpsrKmA1wWvgcj1CquuVfcYiDEdj985u5Wmg7COEARw==
