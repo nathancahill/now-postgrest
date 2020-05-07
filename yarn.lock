@@ -491,10 +491,10 @@
   resolved "https://registry.yarnpkg.com/@now/build-utils/-/build-utils-2.2.1.tgz#9e39d76e53bc7d34b2ec9dd74a635309e76e5842"
   integrity sha512-J+KJxUzQhbTuEVRc7YpqHujypTnOienqnly7xEcGJ/v3BOkY6rtvDvE9bRTyVs8JzGjl3uqiQ/SQsZQPWKZczw==
 
-"@now/frameworks@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@now/frameworks/-/frameworks-0.0.13.tgz#eb04cb13db1c53ec8a10af98c54c76ad816df410"
-  integrity sha512-GVsoRfNP6vJdOsKMN7aiTsRJSSff7Fhq8hjc3W4O8qmBV+NX+w4uljzZUanKfF+lfDtK1Cw5VXaD2mEQwvWjMQ==
+"@now/frameworks@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@now/frameworks/-/frameworks-0.0.14.tgz#e9ca4b274201ad8da7301cb490ef50a9aac2eeb0"
+  integrity sha512-zq7GK+Gdeh+aR+BI1R3ZXjqrtB6baWmg1g05Hlq+0n88hDwuJN61j5haWO5NCh/MMaDfNG7djOkIfnxnE5STHg==
 
 "@now/routing-utils@^1.8.1":
   version "1.8.1"
