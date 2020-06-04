@@ -20,7 +20,7 @@
         "postversion": "git push && git push --tags"
     },
     "dependencies": {
-        "@now/build-utils": "^2.2.1",
+        "@now/build-utils": "^2.3.1",
         "aws-lambda": "^1.0.6",
         "execa": "^4.0.2",
         "fs-extra": "^9.0.1",
