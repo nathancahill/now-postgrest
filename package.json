@@ -39,7 +39,7 @@
         "buffer-replace": "^1.0.0",
         "jest": "^26.4.2",
         "node-fetch": "^2.6.0",
-        "prettier": "^2.1.0",
+        "prettier": "^2.1.1",
         "typescript": "^4.0.2"
     }
 }
