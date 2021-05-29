@@ -1564,11 +1564,11 @@ jest-changed-files@^27.0.2:
     throat "^6.0.1"
 
 jest-circus@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/jest-circus/-/jest-circus-27.0.2.tgz#dd3beb5ba01c1c8c50056590a2bb6ba44b18393a"
-  integrity sha512-HNjkjffeQVuUtG3enua47aYWnvovY0mcCBtMGWAEEv1zdk0YuIWTtitCwuUgzDoj2wXW09gdbT29v0BrW29klA==
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/jest-circus/-/jest-circus-27.0.3.tgz#32006967de484e03589da944064d72e172ce3261"
+  integrity sha512-tdMfzs7SgD5l7jRcI1iB3vtQi5fHwCgo4RlO8bzZnYc05PZ+tlAOMZeS8eGYkZ2tPaRY/aRLMFWQp/8zXBrolQ==
   dependencies:
-    "@jest/environment" "^27.0.2"
+    "@jest/environment" "^27.0.3"
     "@jest/test-result" "^27.0.2"
     "@jest/types" "^27.0.2"
     "@types/node" "*"
@@ -1580,7 +1580,7 @@ jest-circus@^27.0.2:
     jest-each "^27.0.2"
     jest-matcher-utils "^27.0.2"
     jest-message-util "^27.0.2"
-    jest-runtime "^27.0.2"
+    jest-runtime "^27.0.3"
     jest-snapshot "^27.0.2"
     jest-util "^27.0.2"
     pretty-format "^27.0.2"
