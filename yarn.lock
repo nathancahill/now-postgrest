@@ -1712,12 +1712,12 @@ jest-haste-map@^27.0.2:
     fsevents "^2.3.2"
 
 jest-jasmine2@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-27.0.2.tgz#f547b20411ae58b0c83f6ed80ed424bc02976f9c"
-  integrity sha512-HZEdTzpyjXMFIUwFg1CnooxXN+9CoC7O5SImKBC80DWOza9Sc9E0QOKNa8R0uXEus2f3FHmwYQ2oezoohyenJQ==
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-27.0.3.tgz#fa6f6499566ea1b01b68b3ad13f49d1592b02c85"
+  integrity sha512-odJ2ia8P5c+IsqOcWJPmku4AqbXIfTVLRjYTKHri3TEvbmTdLw0ghy13OAPIl/0v7cVH0TURK7+xFOHKDLvKIA==
   dependencies:
     "@babel/traverse" "^7.1.0"
-    "@jest/environment" "^27.0.2"
+    "@jest/environment" "^27.0.3"
     "@jest/source-map" "^27.0.1"
     "@jest/test-result" "^27.0.2"
     "@jest/types" "^27.0.2"
@@ -1729,7 +1729,7 @@ jest-jasmine2@^27.0.2:
     jest-each "^27.0.2"
     jest-matcher-utils "^27.0.2"
     jest-message-util "^27.0.2"
-    jest-runtime "^27.0.2"
+    jest-runtime "^27.0.3"
     jest-snapshot "^27.0.2"
     jest-util "^27.0.2"
     pretty-format "^27.0.2"
