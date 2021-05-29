@@ -1811,12 +1811,12 @@ jest-resolve@^27.0.2:
     slash "^3.0.0"
 
 jest-runner@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/jest-runner/-/jest-runner-27.0.2.tgz#2003d92e9a09ca09c4dcf1b86983db398c359a32"
-  integrity sha512-gIlWmpsQt5tRdmwO7NJPYNJG4bk1Oph8K3IP2Uik1iLpxVTCIf1YNeWrnxqcHrDb/8b4Be741FBcRot9syQAmg==
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/jest-runner/-/jest-runner-27.0.3.tgz#d9747af3bee5a6ffaeb9e10b653263b780258b54"
+  integrity sha512-zH23uIIh1ro1JCD7XX1bQ0bQwXEsBzLX2UJVE/AVLsk4YJRmTfyXIzzRzBWRdnMHHg1NWkJ4fGs7eFP15IqZpQ==
   dependencies:
     "@jest/console" "^27.0.2"
-    "@jest/environment" "^27.0.2"
+    "@jest/environment" "^27.0.3"
     "@jest/test-result" "^27.0.2"
     "@jest/transform" "^27.0.2"
     "@jest/types" "^27.0.2"
@@ -1830,13 +1830,13 @@ jest-runner@^27.0.2:
     jest-leak-detector "^27.0.2"
     jest-message-util "^27.0.2"
     jest-resolve "^27.0.2"
-    jest-runtime "^27.0.2"
+    jest-runtime "^27.0.3"
     jest-util "^27.0.2"
     jest-worker "^27.0.2"
     source-map-support "^0.5.6"
     throat "^6.0.1"
 
-jest-runtime@^27.0.2:
+jest-runtime@^27.0.2, jest-runtime@^27.0.3:
   version "27.0.3"
   resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-27.0.3.tgz#32499c1047e5d953cfbb67fe790ab0167a614d28"
   integrity sha512-k1Hl2pWWHBkSXdCggX2lyLRuDnnnmMlnJd+DPLb8LmmAeHW87WgGC6TplD377VxY3KQu73sklkhGUIdwFgsRVQ==
