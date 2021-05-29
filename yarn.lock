@@ -391,12 +391,12 @@
     jest-mock "^27.0.3"
     jest-util "^27.0.2"
 
-"@jest/globals@^27.0.2":
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/@jest/globals/-/globals-27.0.2.tgz#b52b11af58b49472037470441829829fe70d58ce"
-  integrity sha512-2V2/xg02iNcDu/H2zylqMBQEyfwv9X7oOB2BMpfk18wVST7QxmXRLHwuLZGGTQgnqNwZ9xtePqsFSl/JOZAQrA==
+"@jest/globals@^27.0.3":
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/@jest/globals/-/globals-27.0.3.tgz#1cf8933b7791bba0b99305cbf39fd4d2e3fe4060"
+  integrity sha512-OzsIuf7uf+QalqAGbjClyezzEcLQkdZ+7PejUrZgDs+okdAK8GwRCGcYCirHvhMBBQh60Jr3NlIGbn/KBPQLEQ==
   dependencies:
-    "@jest/environment" "^27.0.2"
+    "@jest/environment" "^27.0.3"
     "@jest/types" "^27.0.2"
     expect "^27.0.2"
 
@@ -1837,14 +1837,14 @@ jest-runner@^27.0.2:
     throat "^6.0.1"
 
 jest-runtime@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-27.0.2.tgz#89413e23b784db9f89ba91fb7e08f2255914fd2d"
-  integrity sha512-Ye2/s2STT+T4bGaOlzMkHiHOsLvhsNbkEcZg6MLwOEVdfEgT22lnrzzjr5viLPczNsVcI63LKFRdL//oMDjUFw==
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-27.0.3.tgz#32499c1047e5d953cfbb67fe790ab0167a614d28"
+  integrity sha512-k1Hl2pWWHBkSXdCggX2lyLRuDnnnmMlnJd+DPLb8LmmAeHW87WgGC6TplD377VxY3KQu73sklkhGUIdwFgsRVQ==
   dependencies:
     "@jest/console" "^27.0.2"
-    "@jest/environment" "^27.0.2"
-    "@jest/fake-timers" "^27.0.2"
-    "@jest/globals" "^27.0.2"
+    "@jest/environment" "^27.0.3"
+    "@jest/fake-timers" "^27.0.3"
+    "@jest/globals" "^27.0.3"
     "@jest/source-map" "^27.0.1"
     "@jest/test-result" "^27.0.2"
     "@jest/transform" "^27.0.2"
@@ -1858,7 +1858,7 @@ jest-runtime@^27.0.2:
     graceful-fs "^4.2.4"
     jest-haste-map "^27.0.2"
     jest-message-util "^27.0.2"
-    jest-mock "^27.0.2"
+    jest-mock "^27.0.3"
     jest-regex-util "^27.0.1"
     jest-resolve "^27.0.2"
     jest-snapshot "^27.0.2"
