@@ -1769,9 +1769,9 @@ jest-message-util@^27.0.2:
     stack-utils "^2.0.3"
 
 jest-mock@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-27.0.2.tgz#3161f7adec087375d50aad724d5f8f9d234586c8"
-  integrity sha512-uU0EhDAoffQL6f6fbh5um7vTFtjG5iu/L7KqIAy22+O2h791keR6XKbBpcnylwqQIoV+dnCl7xdQpZrd7zRMSA==
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-27.0.3.tgz#5591844f9192b3335c0dca38e8e45ed297d4d23d"
+  integrity sha512-O5FZn5XDzEp+Xg28mUz4ovVcdwBBPfAhW9+zJLO0Efn2qNbYcDaJvSlRiQ6BCZUCVOJjALicuJQI9mRFjv1o9Q==
   dependencies:
     "@jest/types" "^27.0.2"
     "@types/node" "*"
