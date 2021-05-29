@@ -1799,13 +1799,13 @@ jest-regex-util@^27.0.1:
   integrity sha512-6nY6QVcpTgEKQy1L41P4pr3aOddneK17kn3HJw6SdwGiKfgCGTvH02hVXL0GU8GEKtPH83eD2DIDgxHXOxVohQ==
 
 jest-resolve-dependencies@^27.0.1:
-  version "27.0.1"
-  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-27.0.1.tgz#3dcaeb277e0253747706467e8f05e1e78a1d534d"
-  integrity sha512-ly1x5mEf21f3IVWbUNwIz/ePLtv4QdhYuQIVSVDqxx7yzAwhhdu0DJo7UNiEYKQY7Im48wfbNdOUpo7euFUXBQ==
+  version "27.0.2"
+  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-27.0.2.tgz#838be32b2db0afd49d62bc8bfd1ff1aefd967d55"
+  integrity sha512-v1TfTp8KG7fLBjD27Ty2Fq/EvVSWkJvC4kFB6fL7QUW3UlHJzK9v1zZoYRaSrqFDYeluJ1/NNN2+1u/J5zfoXg==
   dependencies:
-    "@jest/types" "^27.0.1"
+    "@jest/types" "^27.0.2"
     jest-regex-util "^27.0.1"
-    jest-snapshot "^27.0.1"
+    jest-snapshot "^27.0.2"
 
 jest-resolve@^27.0.1, jest-resolve@^27.0.2:
   version "27.0.2"
@@ -1889,7 +1889,7 @@ jest-serializer@^27.0.1:
     "@types/node" "*"
     graceful-fs "^4.2.4"
 
-jest-snapshot@^27.0.1:
+jest-snapshot@^27.0.1, jest-snapshot@^27.0.2:
   version "27.0.2"
   resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-27.0.2.tgz#40c48dc6afd3cbc5d3d07c061f20fc10d94ca0cd"
   integrity sha512-4RcgvZbPrrbEE/hT6XQ4hr+NVVLNrmsgUnYSnZRT6UAvW9Q2yzGMS+tfJh+xlQJAapnnkNJzsMn6vUa+yfiVHA==
