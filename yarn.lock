@@ -1633,7 +1633,7 @@ jest-config@^27.0.1:
     micromatch "^4.0.4"
     pretty-format "^27.0.1"
 
-jest-diff@^27.0.1:
+jest-diff@^27.0.1, jest-diff@^27.0.2:
   version "27.0.2"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-27.0.2.tgz#f315b87cee5dc134cf42c2708ab27375cc3f5a7e"
   integrity sha512-BFIdRb0LqfV1hBt8crQmw6gGQHVDhM87SpMIZ45FPYKReZYG5er1+5pIn2zKqvrJp6WNox0ylR8571Iwk2Dmgw==
@@ -1744,14 +1744,14 @@ jest-leak-detector@^27.0.1:
     pretty-format "^27.0.2"
 
 jest-matcher-utils@^27.0.1:
-  version "27.0.1"
-  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-27.0.1.tgz#7a01330786e370f152b0b0159f827293b6322909"
-  integrity sha512-NauNU+olKhPzLlsRnTOYFGk/MK5QFYl9ZzkrtfsY4eCq4SB3Bcl03UL44VdnlN5S/uFn4H2jwvRY1y6nSDTX3g==
+  version "27.0.2"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-27.0.2.tgz#f14c060605a95a466cdc759acc546c6f4cbfc4f0"
+  integrity sha512-Qczi5xnTNjkhcIB0Yy75Txt+Ez51xdhOxsukN7awzq2auZQGPHcQrJ623PZj0ECDEMOk2soxWx05EXdXGd1CbA==
   dependencies:
     chalk "^4.0.0"
-    jest-diff "^27.0.1"
+    jest-diff "^27.0.2"
     jest-get-type "^27.0.1"
-    pretty-format "^27.0.1"
+    pretty-format "^27.0.2"
 
 jest-message-util@^27.0.1:
   version "27.0.2"
