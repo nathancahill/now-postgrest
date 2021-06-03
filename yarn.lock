@@ -1910,37 +1910,7 @@ jest-serializer@^27.0.1:
     "@types/node" "*"
     graceful-fs "^4.2.4"
 
-jest-snapshot@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-27.0.2.tgz#40c48dc6afd3cbc5d3d07c061f20fc10d94ca0cd"
-  integrity sha512-4RcgvZbPrrbEE/hT6XQ4hr+NVVLNrmsgUnYSnZRT6UAvW9Q2yzGMS+tfJh+xlQJAapnnkNJzsMn6vUa+yfiVHA==
-  dependencies:
-    "@babel/core" "^7.7.2"
-    "@babel/generator" "^7.7.2"
-    "@babel/parser" "^7.7.2"
-    "@babel/plugin-syntax-typescript" "^7.7.2"
-    "@babel/traverse" "^7.7.2"
-    "@babel/types" "^7.0.0"
-    "@jest/transform" "^27.0.2"
-    "@jest/types" "^27.0.2"
-    "@types/babel__traverse" "^7.0.4"
-    "@types/prettier" "^2.1.5"
-    babel-preset-current-node-syntax "^1.0.0"
-    chalk "^4.0.0"
-    expect "^27.0.2"
-    graceful-fs "^4.2.4"
-    jest-diff "^27.0.2"
-    jest-get-type "^27.0.1"
-    jest-haste-map "^27.0.2"
-    jest-matcher-utils "^27.0.2"
-    jest-message-util "^27.0.2"
-    jest-resolve "^27.0.2"
-    jest-util "^27.0.2"
-    natural-compare "^1.4.0"
-    pretty-format "^27.0.2"
-    semver "^7.3.2"
-
-jest-snapshot@^27.0.4:
+jest-snapshot@^27.0.2, jest-snapshot@^27.0.4:
   version "27.0.4"
   resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-27.0.4.tgz#2b96e22ca90382b3e93bd0aae2ce4c78bf51fb5b"
   integrity sha512-hnjrvpKGdSMvKfbHyaG5Kul7pDJGZvjVy0CKpzhu28MmAssDXS6GpynhXzgst1wBQoKD8c9b2VS2a5yhDLQRCA==
