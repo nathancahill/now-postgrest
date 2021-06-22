@@ -1794,9 +1794,9 @@ jest-get-type@^27.0.1:
   integrity sha512-9Tggo9zZbu0sHKebiAijyt1NM77Z0uO4tuWOxUCujAiSeXv30Vb5D4xVF4UR4YWNapcftj+PbByU54lKD7/xMg==
 
 jest-haste-map@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-27.0.2.tgz#3f1819400c671237e48b4d4b76a80a0dbed7577f"
-  integrity sha512-37gYfrYjjhEfk37C4bCMWAC0oPBxDpG0qpl8lYg8BT//wf353YT/fzgA7+Dq0EtM7rPFS3JEcMsxdtDwNMi2cA==
+  version "27.0.5"
+  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-27.0.5.tgz#2e1e55073b5328410a2c0d74b334e513d71f3470"
+  integrity sha512-3LFryGSHxwPFHzKIs6W0BGA2xr6g1MvzSjR3h3D8K8Uqy4vbRm/grpGHzbPtIbOPLC6wFoViRrNEmd116QWSkw==
   dependencies:
     "@jest/types" "^27.0.2"
     "@types/graceful-fs" "^4.1.2"
